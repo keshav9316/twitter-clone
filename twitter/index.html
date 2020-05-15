@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+  <header><h1 class ="title">Twitter Clone</h1></header>
+    <main>
+        <form class ="mew-form">
+        <div id="response" class="u-full-width button-primary response"></div>
+            <label for="name">Name</label>
+            <input class="u-full-width" type="text" id="name" name="name"></input>
+            <label for="content">Content</label>
+            <input class="u-full-width" type="text" id="content" name="content"></input>   
+            <button class="button-primary">submit</button>
+            <div class="loading">
+                <img src="loading.gif" alt="loading...">
+            </div>
+            <div id ="list" class="mews"></div>
+        </form>
+    </main>
+    <script src="client.js"></script>
+    <script src="three.r92.min.js"></script>
+    <script src="vanta.waves.min.js"></script>
+    <script>
+    VANTA.WAVES({
+    el: "#",
+    color: 0x5f98,
+    shininess: 122.00,
+    waveHeight: 38.50,
+    waveSpeed: 1.10,
+    zoom: 0.92
+    })
+    </script>
+</body>
+</html>
